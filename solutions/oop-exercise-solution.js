@@ -19,7 +19,6 @@ class Student {
     const total = this.grades.reduce((acc, grade) => acc + grade, 0);
     return total / this.grades.length;
   }
-
   hasPassed(passingGrade) {
     return this.calculateAverageGrade() >= passingGrade;
   }
